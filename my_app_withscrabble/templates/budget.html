@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block body %}
+<h2 align="center"><img src="/static/drawn_dollar_sign.jpg" class="img-rounded" style="width:150px;height:150px"> Daily Budget <img src="/static/drawn_dollar_sign.jpg" class="img-rounded" style="width:150px;height:150px"></h2>
+<form class="form-search">
+  <fieldset>
+    <legend></legend>
+    <label>Please enter how much you've spent today:</label>
+    <input type="text" class="input-medium search-query" placeholder="$150.00">
+    <span class="help-block"></span>
+    <label>Please enter how much you <em>budgeted</em> to spend today:</label>
+    <input type="text" class="input-medium search-query" placeholder="$200.00">
+    <span class="help-block"></span>
+    <button type="submit" class="btn">Submit</button>
+    <p> If the amount you <strong>spent</strong> is less than the amount you <strong>budgeted</strong>, you are on the right track!</p>
+  </fieldset>
+</form>
+{% endblock%}
